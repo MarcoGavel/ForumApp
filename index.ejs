@@ -1,0 +1,22 @@
+<%- include('layout') %>
+
+<main class="container mt-4">
+    <% if (hasPosts) { %>
+        <div class="mt-4 mb-4"> <!-- Aggiungi margine inferiore -->
+            <button class="btn btn-primary" style="background-color: #789dc4; border-color: #000000;"><a href="/create_post" class="text-white">Crea un nuovo post</a></button>
+        </div>
+    <% } %>
+
+    <% if(posts.length > 0) { %>
+        <div class="list-group">
+            <% posts.forEach((post, index) => { %>
+                <a href="/edit_post/<%= index %>" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1"><%= post.title %></h5>
+                    <p class="mb-1"><%= post.content %></p>
+                </a>
+            <% }) %>
+        </div>
+    <% } else { %>
+        <p>Nessun post ancora. <a href="/create_post">Crea un nuovo post</a></p>
+    <% } %>
+</main>

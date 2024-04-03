@@ -1,0 +1,81 @@
+/* Colori */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f44336;
+}
+
+/* Transizioni */
+button {
+    transition: background-color 0.3s ease;
+}
+
+/* Icone */
+a[href^="/edit_post"]::before {
+    content: "\1F58A"; /* Icona di penna */
+    margin-right: 5px;
+}
+
+a[href^="/delete_post"]::before {
+    content: "\1F5D1"; /* Icona di cestino */
+    margin-right: 5px;
+}
+
+/* Font */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* Elementi grafici */
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+li {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Colore di sfondo grigio chiaro */
+    color: #343a40; /* Colore del testo scuro */
+    padding: 20px 0; /* Spazio interno al footer */
+}
+
