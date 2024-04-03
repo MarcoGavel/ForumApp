@@ -29,12 +29,12 @@ button {
 
 /* Icone */
 a[href^="/edit_post"]::before {
-    content: "\1F58A"; /* Icona di penna */
+    content: "\1F58A";
     margin-right: 5px;
 }
 
 a[href^="/delete_post"]::before {
-    content: "\1F5D1"; /* Icona di cestino */
+    content: "\1F5D1"; 
     margin-right: 5px;
 }
 
@@ -74,8 +74,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #f8f9fa; /* Colore di sfondo grigio chiaro */
-    color: #343a40; /* Colore del testo scuro */
-    padding: 20px 0; /* Spazio interno al footer */
-}
+    background-color: #f8f9fa; 
+    color: #343a40; 
+    padding: 20px 0; 
 
